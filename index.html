@@ -71,6 +71,109 @@
       <div class="outer">
         <section id="main">
   
+    <article id="poster-20210527-1028" class="h-entry article article-type-poster" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/27/20210527-1028/" class="article-date">
+  <time class="dt-published" datetime="2021-05-27T02:28:31.000Z" itemprop="datePublished">2021-05-27</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/27/20210527-1028/">20210527-1028</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>昨日工作</p>
+</blockquote>
+<h2 id="修改时移回看支持Content-Type"><a href="#修改时移回看支持Content-Type" class="headerlink" title="修改时移回看支持Content-Type"></a>修改时移回看支持Content-Type</h2><p>1）nginx.conf文件增加配置<br>2）测试回看index.m3u8兼容，目前测试videojs加载ts异常，但单独加载可播放</p>
+<h2 id="公网vip测试"><a href="#公网vip测试" class="headerlink" title="公网vip测试"></a>公网vip测试</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/27/20210527-1028/" data-id="ckp82cicu0000ay7mefks476t" data-title="20210527-1028" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
+    <article id="post-20210526-0922-remind" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/05/26/20210526-0922-remind/" class="article-date">
+  <time class="dt-published" datetime="2021-05-26T01:23:26.000Z" itemprop="datePublished">2021-05-26</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/%E9%9A%8F%E7%AC%94/">随笔</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/05/26/20210526-0922-remind/">20210526-0922-remind.md</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <blockquote>
+<p>昨日工作</p>
+</blockquote>
+<h2 id="Buxfix：修复relay转推问题"><a href="#Buxfix：修复relay转推问题" class="headerlink" title="Buxfix：修复relay转推问题"></a>Buxfix：修复relay转推问题</h2><p>1）实现遍历时break，但上行只有一个push_event，需遍历所有relay转推状态,判定是否重试<br>2）协助测试，下发rtmp-push时可能转推到一个worker上报<code>dumplicate stream</code><br>3）上线观察</p>
+<h2 id="m3u8回看safari播放失败"><a href="#m3u8回看safari播放失败" class="headerlink" title="m3u8回看safari播放失败"></a>m3u8回看safari播放失败</h2><p>1）http header返回<code>Content-Type: application/octet-stream</code><br>   一般m3u8设置header里<code>Content-Type: application/vnd.apple.mpegurl m3u8</code><br>   ts 设置header <code>Content-Type: video/mp2t</code><br>2）通过safari测试，添加对应头可以解决此问题</p>
+<h2 id="面试别人的感受"><a href="#面试别人的感受" class="headerlink" title="面试别人的感受"></a>面试别人的感受</h2><p>1）有时候很难很自信<br>2）打铁还需自身硬<br>3）流媒体知识就那么多，多总结</p>
+<blockquote>
+<p>今日计划</p>
+</blockquote>
+<h2 id="回看修复上线"><a href="#回看修复上线" class="headerlink" title="回看修复上线"></a>回看修复上线</h2><p>1）配置增加<br>types {<br>    application/vnd.apple.mpegurl m3u8;<br>    video/mp2t ts;<br>}</p>
+<h2 id="测试agent时延"><a href="#测试agent时延" class="headerlink" title="测试agent时延"></a>测试agent时延</h2><p>1）增加华北代理公网vip<br>2）声音波形录制测试</p>
+<h2 id="文档输出"><a href="#文档输出" class="headerlink" title="文档输出"></a>文档输出</h2>
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/05/26/20210526-0922-remind/" data-id="ckp54iuyl00004o7m5mcweuno" data-title="20210526-0922-remind.md" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag">博客</a></li></ul>
+
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-20210525-0937-remind" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/05/25/20210525-0937-remind/" class="article-date">
@@ -398,6 +501,14 @@
       <ul>
         
           <li>
+            <a href="/2021/05/27/20210527-1028/">20210527-1028</a>
+          </li>
+        
+          <li>
+            <a href="/2021/05/26/20210526-0922-remind/">20210526-0922-remind.md</a>
+          </li>
+        
+          <li>
             <a href="/2021/05/25/20210525-0937-remind/">临近了，比较浮躁</a>
           </li>
         
@@ -407,14 +518,6 @@
         
           <li>
             <a href="/2021/05/23/20210523-leisure-day/">休闲的一天</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/22/20210522-Hello-World/">Hello World, Blog</a>
-          </li>
-        
-          <li>
-            <a href="/2021/05/20/5w2h-chundonglinlin/">关于写博客的七点反思</a>
           </li>
         
       </ul>
